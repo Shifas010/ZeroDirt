@@ -7,7 +7,6 @@ export const Gsap = () => {
 
     const GsapTB = () => {
         const played = gsap.utils.toArray('.gsapTB');
-        played.forEach((box)=>{
 
             gsap.from(played[0], {
                 y: -300,
@@ -16,7 +15,6 @@ export const Gsap = () => {
                     toggleActions: 'play none none reset',
                 },
             })
-        })
        
 
 

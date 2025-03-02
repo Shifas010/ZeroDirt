@@ -19,11 +19,7 @@ export const metadata: Metadata = {
   
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout() {
   return (
     <html lang="en">
       <head><link rel="icon" href="zerodirt.ico" sizes="null" /></head>

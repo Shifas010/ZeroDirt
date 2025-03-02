@@ -3,21 +3,13 @@ import React from 'react'
 import CardSlider from '../CardSlider'
 
 function Testimonials() {
-    const CartDetails = [
-        {
-            Header: "Fast and Reliable Service",
 
-        }
-        , {
-            Header: "Expert Care for All Fabrics",
-
-        }]
 
 
     return (
         <div className='w-full h-full grid-cols-1'>
             <div className=" lg:text-[44px] text-[30px] space-x-1  font-extrabold p-2 lg:p-4">
-            What Our Customers Say !
+                What Our Customers Say !
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2">
                 <Image

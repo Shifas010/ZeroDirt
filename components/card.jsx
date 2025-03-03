@@ -38,7 +38,7 @@ function Cart({ CartDetails, Height, Divcol, CardGap, BackgroundColor, Border, c
                   </div>
                 </div>
                 <div className="h-3/4 overflow-y-scroll scrollbar-hide  flex justify-center lg:pt-2 mt-3 p-4">
-                  {data?.discription && <div   className={`justify-center    text-center p-4  ${data.bold ? "text-black font-bold" : ""} flex ${data?.textsize ? data?.textsize : "text-base"}`}>{data.discription}</div>}
+                  {data?.discription && <div   className={`justify-center    text-center p-4   ${data.bold ? "text-black font-bold" : ""} flex ${data?.textsize ? data?.textsize : "text-base"}`}>{data.discription}</div>}
                 </div>
               </div>
             }

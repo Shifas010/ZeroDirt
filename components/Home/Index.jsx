@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <div className="grid h-screen grid-cols-1 pt-4">
       <div>
-        <div><NavBar /></div>
+        <div className='fixed top-0 w-full z-50'><NavBar /></div>
         <div ><AppBody /></div>
         <div><Footer /></div>
       </div>

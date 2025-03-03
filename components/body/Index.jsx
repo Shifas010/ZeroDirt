@@ -38,8 +38,13 @@ function AppBody() {
 
     <div className=' h-full  overflow-x-scroll scrollbar-hide scroll-m-0'>
       <div className="bg-[#00ABF0] bg-opacity-5 px-20 lg:px-60 "> <Details /></div>
-      <div className=" px-5 md:px-10 lg:px-60   box" > <WhyUS /></div>
-      <div className="box px-5 md:px-10 lg:px-60 pt-20 lg:pt-0" id='LaundryServiceLayout'>
+      <div className=" px-5 md:px-10 lg:px-60 " >
+        <div className="text-3xl lg:text-5xl flex font-bold text-[#1A6FA8] text-wrap items-center">  Why&thinsp;  <p className='text-[#00ABF0] text-5xl lg:text-7xl &nbsp'>  Choose&thinsp;  </p> US</div>
+        <div className="box">
+          <WhyUS />
+        </div>
+      </div>
+      <div className="box px-5 md:px-10 lg:px-60  pt-[10.5rem]  lg:pt-0" id='LaundryServiceLayout'>
         <h1 className=' text-[30px] lg:text-[44px] space-x-1  font-bold   '> Laundry Services</h1>
         <div className='h-[700px] w-full bg-white overflow-y-scroll scrollbar-hide '>
           <LaundryServiceLayout />

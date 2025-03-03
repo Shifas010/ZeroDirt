@@ -50,12 +50,12 @@ export default function App() {
           </Link>
         </NavbarItem>
         <NavbarItem className="p-4 border-r-1" isActive>
-          <Link aria-current="page" href="#">
+          <Link aria-current="page" href="#LaundryServiceLayout">
             Laundry Services
           </Link>
         </NavbarItem>
         <NavbarItem className="p-4">
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="#CleaningServiceLayout">
             Cleaning Services
           </Link>
         </NavbarItem>

@@ -11,15 +11,15 @@ function Footer() {
       text: "About"
     },
     {
-      Link: "#",
+      Link: "https://wa.me/message/SGU4HYPMAQRHG1",
       text: "Link"
     },
     {
-      Link: "#",
+      Link: "#CleaningServiceLayout",
       text: "Dry-Cleaning Services"
     },
     {
-      Link: "#",
+      Link: "#LaundryServiceLayout",
       text: "Laundy Services"
     }
   ]

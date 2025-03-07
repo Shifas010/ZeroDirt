@@ -4,10 +4,8 @@ import CardSlider from '../CardSlider'
 
 function Testimonials() {
 
-
-
     return (
-        <div className='w-full h-full grid-cols-1'>
+        <div className='w-full h-full grid-cols-1 visiblity'>
             <div className=" lg:text-[44px] text-[30px] space-x-1  font-extrabold p-2 lg:p-4">
                 What Our Customers Say !
             </div>

@@ -59,18 +59,18 @@ function LaundryServiceLayout() {
         }, {
             Header: "Bag Cleaning",
             discription: "Bring your bags back to life with our expert cleaning service! We carefully remove stains and restore them to perfection!",
-            Icon: <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 448 512"><path fill="#1A6FA8" d="M352 160v-32C352 57.42 294.579 0 224 0S96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24s24 10.745 24 24s-10.745 24-24 24m-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24s24 10.745 24 24s-10.745 24-24 24" strokeWidth="13" stroke="#1A6FA8"/></svg>,
+            Icon: <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 448 512"><path fill="#1A6FA8" d="M352 160v-32C352 57.42 294.579 0 224 0S96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24s24 10.745 24 24s-10.745 24-24 24m-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24s24 10.745 24 24s-10.745 24-24 24" strokeWidth="13" stroke="#1A6FA8" /></svg>,
             textsize: "text-xl font-light",
             herdersize: "Xl",
 
         }, {
             Header: "Helmet Cleaning",
             discription: "Keep your helmet spotless and fresh with our cleaning service! We remove dirt and grime, ensuring safety and a clean look!",
-            Icon:<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="#1A6FA8" d="M2.2 11.2c-.2 2.4.5 4.4 2 6.2S7.7 20 10.1 20h10c.5 0 1-.2 1.4-.6s.6-.9.6-1.4v-.8c0-.6-.1-1.3-.2-2.2h-8.2c-1 0-1.8-.4-2.5-1.1s-1.1-1.6-1.1-2.5c0-1.6.7-2.7 2.2-3.3L17.1 6c-1.7-1.2-3.7-1.9-6-2c-2.2-.2-4.2.5-6 1.9S2.4 9 2.2 11.2m9.9.2c0 .4.2.8.5 1.1s.7.5 1.1.5h7.8c-.6-2.2-1.5-4-2.8-5.4l-5.6 2.3c-.7.2-1 .7-1 1.5" strokeWidth="0.5" stroke="#1A6FA8"/></svg>,
+            Icon: <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="#1A6FA8" d="M2.2 11.2c-.2 2.4.5 4.4 2 6.2S7.7 20 10.1 20h10c.5 0 1-.2 1.4-.6s.6-.9.6-1.4v-.8c0-.6-.1-1.3-.2-2.2h-8.2c-1 0-1.8-.4-2.5-1.1s-1.1-1.6-1.1-2.5c0-1.6.7-2.7 2.2-3.3L17.1 6c-1.7-1.2-3.7-1.9-6-2c-2.2-.2-4.2.5-6 1.9S2.4 9 2.2 11.2m9.9.2c0 .4.2.8.5 1.1s.7.5 1.1.5h7.8c-.6-2.2-1.5-4-2.8-5.4l-5.6 2.3c-.7.2-1 .7-1 1.5" strokeWidth="0.5" stroke="#1A6FA8" /></svg>,
             textsize: "text-xl font-light",
             herdersize: "Xl",
 
-        },{
+        }, {
             Header: "Curtain Cleaning",
             discription: "Revitalize your curtains with our specialized cleaning service! We gently remove dust and stains, leaving your curtains fresh and vibrant!",
             Icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#1A6FA8" d="M23 3H1V1h22zM2 22h4c0-3-2-5-2-5c6-4 7-13 7-13H2zM22 4h-9s1 9 7 13c0 0-2 2-2 5h4z" strokeWidth="0.5" stroke="#1A6FA8" /></svg>,
@@ -81,9 +81,11 @@ function LaundryServiceLayout() {
 
     ]
 
+
+
     return (
         <div className='h-full w-full' >
-            <div className="w-full h-full">
+            <div className="w-full h-full ">
                 <Cart CartDetails={CartDetails} Divcol={3} CardGap={2} />
             </div>
 

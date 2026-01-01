@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useEffect, useRef, useState } from 'react'
-import "./Details.css";
 import Image from 'next/image';
 import gsap from 'gsap';
 import { Gsap } from '../utils/gsaphandler';
@@ -58,7 +57,7 @@ function Details() {
       <div className='font-bold text-xl lg:text-2xl text-[#00ABF0] text-pretty lg:p-14'>
         <div className='quote' ref={textRef}>
           "Experience hassle-free Laundry and Cleaning Services with
-          <b className='text-[#1A6FA8] text-3xl'>ZeroDirt</b>. We deliver top-quality, fresh results, ensuring your wardrobe and home stay spotless, so you can enjoy more time and comfort."</div>
+          <b className='text-[#1A6FA8] text-3xl'> ZeroDirt </b>. We deliver top-quality, fresh results, ensuring your wardrobe and home stay spotless, so you can enjoy more time and comfort."</div>
       </div>
       <div className="p-10 hidden justify-center items-center lg:flex visiblity gsapTB ">
         <Image

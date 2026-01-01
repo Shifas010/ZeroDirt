@@ -7,18 +7,44 @@ const CardSlider = () => {
   const testimonials = [
     {
       quote: "This laundry service is amazing! They always get my clothes looking brand new, and they are quick too!",
-      name: "Jane Doe",
+      name: "Saleena",
+      place:"(Nilambur)",
+      imageUrl:"images/women.png",
       starcout: 3
     },
     {
-      quote: "I love how eco-friendly this service is. My clothes feel fresh, and I’m happy they use sustainable methods.",
-      name: "John Smith",
+      quote: "Clothes returned spotless, fresh smelling, neatly folded, delivered on time, prices fair, staff polite, service reliable, exceeded expectations consistently always.",
+      name: "mani",
+      place:"(Akampadam)",
+      imageUrl:"images/man.png",
       starcout: 4
     },
     {
-      quote: "Best dry cleaning service I've used in years. Fast, reliable, and the staff is always friendly!",
-      name: "Alice Brown",
+      quote: "Quick turnaround, hygienic washing, eco friendly detergents, courteous team, flexible scheduling, zero complaints, trustworthy laundry partner overall for families daily.",
+      imageUrl:"images/man.png",
+      name: "Mathews",
+      place:"(Nilambur)",
       starcout: 2
+    }, {
+      quote: "Thorough sanitization, dust eliminated, furniture refreshed, allergens reduced, process smooth, pricing fair, will book again without hesitation, highly trusted service.",
+      imageUrl:"images/man.png",
+      name: "Sajeer babu",
+      place:"(chakkalakkuth)",
+      starcout: 4
+    },
+     {
+      quote: "Kitchen and bathrooms sparkling, grease removed, tiles shining, team respectful, safety followed, results visible immediately, impressed with thoroughness, care, professionalism.",
+      imageUrl:"images/women.png",
+      name: "Rabia",
+      place:"(kallempadam)",
+      starcout: 3
+    },
+         {
+      quote: "Home looked brand new, deep corners spotless, odors gone, professionals punctual, equipment advanced, attention detailed, satisfaction guaranteed truly beyond expectations.",
+      imageUrl:"images/man.png",
+      name: "Dr. Varun",
+      place:"(Nilambur)",
+      starcout: 4
     }
   ];
 
@@ -32,12 +58,6 @@ const CardSlider = () => {
     );
   };
 
-  const StarCount = () => {
-
-    retun(
-      <div className=""></div>
-    )
-  }
 
   const StarImage = (starCount) => {
     const Star = []
@@ -69,8 +89,11 @@ const CardSlider = () => {
             <div>
               <div className="h-1/3 w-full justify-center items-center flex">
                 <div className="">
-                  <div className="rounded-[100%] bg-gray-400 h-[100px] w-[100px]"></div>
+                  <div className="justify-center flex  w-[100px]">
+                    <img src={testimonials[currentIndex].imageUrl}/>
+                  </div>
                   <div className="justify-center font-bold text-[#1A6FA8] flex">{testimonials[currentIndex].name}</div>
+                  <div className="justify-center font-bold text-[#1A6FA8] flex">{testimonials[currentIndex].place}</div>
                 </div>
               </div>
               <div className="justify-center flex text-center p-4 truncate text-wrap overflow-hidden"> {testimonials[currentIndex].quote}</div>

@@ -1,6 +1,7 @@
 
 'use client'
 
+import { Button } from '@heroui/button'
 import React from 'react'
 
 
@@ -17,35 +18,85 @@ function Cart({ CartDetails, Height, Divcol, CardGap, BackgroundColor, Border, c
   const backgroundColor = `bg-[${BackgroundColor}]`
   return (
     <div className={` grid   ${Divcol ? divCol : 'grid-cols-2 lg:grid-cols-3'} ${CardGap ? cardGap : "gap-4"} p-1 lg:p-4`}>
-      {CartDetails?.map((data, index) => {
-        return (
-          <div key={index} className={`  p-4  ${Height ? height : 'h-[288px]'} rounded-md  ${BackgroundColor ? backgroundColor : 'bg-[#1A6FA8]'} shadow-md ${Border ? "border" : " "} border-[#1a6fa821] bg-opacity-5 justify-center items-center flex`}>
-            {cartBody ?
-              <div className="h-full w-full">
-                <cartBody />
-              </div>
-              :
-              <div className="h-full">
-                <div className="h-1/4 p-2 justify-center flex">
-                  <div className="">
-                    {data.Icon &&
-                      <div className="justify-center flex ">
-                        {data.Icon}
-                      </div>
-                    }
-                    <div className={`items-center text-center  flex font-black ${data.herdersize ? data.herdersize : "text-xl lg:text-4xl"}  text-[#1A6FA8] p-2`}>{data.Header}</div>
-                  </div>
-                </div>
-                <div className="h-3/4 overflow-y-scroll scrollbar-hide  flex justify-center lg:pt-2 mt-3 p-4">
-                  {data?.discription && <div   className={`justify-center    text-center p-4   ${data.bold ? "text-black font-bold" : ""} flex ${data?.textsize ? data?.textsize : "text-base"}`}>{data.discription}</div>}
-                </div>
-              </div>
-            }
-          </div>
-        )
+     {CartDetails?.map((data, index) => {
+  return (
+    <div
+      key={index}
+      className={`
+        relative overflow-hidden rounded-md shadow-md
+        ${Height ? height : 'h-[288px]'}
+        ${Border ? "border border-[#1a6fa821]" : ""}
+        flex items-center justify-center
+      `}
+      style={{
+        backgroundImage: `url(${data.imageUrl})`,
+      }}
+    >
+      {/* Background Image */}
+      <div className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${data.imageUrl})` }}
+      />
 
-      })
-      }
+      {/* Glassmorphism Overlay */}
+      <div className="
+        absolute inset-0
+        bg-white/20
+        backdrop-blur-md
+        border border-white/30
+      " />
+
+      {/* Card Content */}
+      <div className="relative z-10 w-full h-full p-4 text-white">
+        {cartBody ? (
+          <div className="h-full w-full">
+            <cartBody />
+          </div>
+        ) : (
+          <div className="h-full flex flex-col">
+            {/* Header */}
+            <div className="h-1/4 p-2 flex justify-center items-center">
+              <div>
+                {data.Icon && (
+                  <div className="flex justify-center mb-2">
+                    {data.Icon}
+                  </div>
+                )}
+                <div
+                  className={`
+                    text-center font-black
+                    ${data.herdersize ?? "text-xl lg:text-4xl"}
+                    text-white
+                  `}
+                >
+                  {data.Header}
+                </div>
+              </div>
+            </div>
+
+            {/* Description */}
+            <div className="h-3/4 overflow-y-scroll scrollbar-hide flex justify-center px-4">
+              {data?.discription && (
+                <div
+                  className={`
+                    text-center p-4
+                    ${data.bold ? "font-bold" : ""}
+                    ${data?.textsize ?? "text-base"}
+                    text-white
+                  `}
+                >
+                  {data.discription}
+                </div>
+              )}
+            </div>
+            <div className=" flex  justify-center">
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+})}
+
     </div>
 
   )

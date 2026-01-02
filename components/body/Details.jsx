@@ -5,8 +5,6 @@ import Image from 'next/image';
 import gsap from 'gsap';
 import { Gsap } from '../utils/gsaphandler';
 
-
-
 function Details() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const textRef = useRef(null)

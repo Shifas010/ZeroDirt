@@ -6,7 +6,7 @@ function Testimonials() {
 
     return (
         <div className='w-full h-full grid-cols-1 visiblity'>
-            <div className=" lg:text-[44px] text-[30px] space-x-1  font-extrabold p-2 lg:p-4">
+            <div className=" lg:text-[44px] text-[30px] space-x-1  font-extrabold p-2 lg:p-4 text-[#1A6FA8]">
                 What Our Customers Say !
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2">

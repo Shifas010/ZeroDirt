@@ -40,7 +40,7 @@ function Cart({ CartDetails, Height, Divcol, CardGap, BackgroundColor, Border, c
       {/* Glassmorphism Overlay */}
       <div className="
         absolute inset-0
-        bg-white/20
+        bg-white/10
         backdrop-blur-md
         border border-white/30
       " />
@@ -65,7 +65,7 @@ function Cart({ CartDetails, Height, Divcol, CardGap, BackgroundColor, Border, c
                   className={`
                     text-center font-black
                     ${data.herdersize ?? "text-xl lg:text-4xl"}
-                    text-white
+                    text-blue
                   `}
                 >
                   {data.Header}
@@ -82,6 +82,7 @@ function Cart({ CartDetails, Height, Divcol, CardGap, BackgroundColor, Border, c
                     ${data.bold ? "font-bold" : ""}
                     ${data?.textsize ?? "text-base"}
                     text-white
+                      [text-shadow:_0_0_2px_rgba(0,0,0,0.7)]
                   `}
                 >
                   {data.discription}

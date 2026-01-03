@@ -96,7 +96,7 @@ const CardSlider = () => {
                   <div className="justify-center font-bold text-[#1A6FA8] flex">{testimonials[currentIndex].place}</div>
                 </div>
               </div>
-              <div className="justify-center flex text-center p-4 truncate text-wrap overflow-hidden"> {testimonials[currentIndex].quote}</div>
+              <div className="justify-center text-[#1A6FA8] flex text-center p-4 truncate text-wrap overflow-hidden"> {testimonials[currentIndex].quote}</div>
               <div className="justify-center items-center flex  p-4">{
 
                 StarImage(testimonials[currentIndex].starcout)

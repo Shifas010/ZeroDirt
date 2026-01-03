@@ -60,24 +60,24 @@ export default function App() {
           />
         </NavbarBrand>
       </NavbarContent>
-      <NavbarContent className="hidden shadow-xl lg:flex gap-14 font-extrabold border mt-20 p-2 rounded-[120px] border-[#00acf01c] bg-[#ffffff11]" justify="center">
+      <NavbarContent className="hidden text-base shadow-xl lg:flex gap-14 font-extrabold border mt-20 p-2 rounded-[120px] border-[#00acf01c] bg-[#ffffff11]" justify="center">
         <NavbarItem className="p-4  border-r-1" >
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="#" className="text-gray-700">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem className="p-4 border-r-1 flex" >
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="#" className="text-gray-700">
             About Us
           </Link>
         </NavbarItem>
         <NavbarItem className="p-4 border-r-1" isActive>
-          <Link aria-current="page" href="#LaundryServiceLayout">
+          <Link aria-current="page" href="#LaundryServiceLayout" >
             Laundry Services
           </Link>
         </NavbarItem>
         <NavbarItem className="p-4">
-          <Link color="foreground" href="#CleaningServiceLayout">
+          <Link color="foreground" href="#CleaningServiceLayout" className="text-gray-700">
             Cleaning Services
           </Link>
         </NavbarItem>

@@ -73,6 +73,30 @@ function WhyUS() {
                 >
                     <div className="space-y-3 sm:space-y-4 flex flex-col">
                         <div className="h-[200px] sm:h-[250px] md:h-[300px] hover:scale-105 transition-all duration-300 rounded-xl bg-gradient-to-br shadow-md hover:shadow-xl overflow-hidden">
+                            <img src="images/shop1.png" alt="shop1" className="w-full h-full object-cover" />
+                        </div>
+                        <div className="h-[150px] sm:h-[200px] md:h-[250px] hover:scale-105 transition-all duration-300 rounded-xl bg-gradient-to-br shadow-md hover:shadow-xl overflow-hidden">
+                            <img src="images/shop2.png" alt="shop2" className="w-full h-full object-cover" />
+                        </div>
+                    </div>
+                    <div className="space-y-3 sm:space-y-4 flex flex-col">
+                        <div className="h-[150px] sm:h-[200px] md:h-[250px] hover:scale-105 transition-all duration-300 rounded-xl bg-gradient-to-br shadow-md hover:shadow-xl overflow-hidden">
+                            <img src="images/shop3.png" alt="shop3" className="w-full h-full object-cover" />
+                        </div>
+                        <div className="h-[200px] sm:h-[250px] md:h-[300px] hover:scale-105 transition-all duration-300 rounded-xl bg-gradient-to-br shadow-md hover:shadow-xl overflow-hidden">
+                            <img src="images/shop4.png" alt="shop4" className="w-full h-full object-cover" />
+                        </div>
+                    </div>
+                    <div className="space-y-3 sm:space-y-4 flex flex-col col-span-2 md:col-span-1">
+                        <div className="h-[150px] sm:h-[200px] md:h-[250px] hover:scale-105 transition-all duration-300 rounded-xl bg-gradient-to-br shadow-md hover:shadow-xl overflow-hidden">
+                            <img src="images/shop5.png" alt="shop5" className="w-full h-full object-cover" />
+                        </div>
+                        <div className="h-[200px] sm:h-[250px] md:h-[300px] hover:scale-105 transition-all duration-300 rounded-xl bg-gradient-to-br shadow-md hover:shadow-xl overflow-hidden">
+                            <img src="images/shop6.png" alt="shop6" className="w-full h-full object-cover" />
+                        </div>
+                    </div>
+                           <div className="space-y-3 sm:space-y-4 flex flex-col">
+                        <div className="h-[200px] sm:h-[250px] md:h-[300px] hover:scale-105 transition-all duration-300 rounded-xl bg-gradient-to-br shadow-md hover:shadow-xl overflow-hidden">
                             <img src="images/hospital.png" alt="Hospital" className="w-full h-full object-cover" />
                         </div>
                         <div className="h-[150px] sm:h-[200px] md:h-[250px] hover:scale-105 transition-all duration-300 rounded-xl bg-gradient-to-br shadow-md hover:shadow-xl overflow-hidden">
@@ -95,6 +119,7 @@ function WhyUS() {
                             <img src="images/laundry.png" alt="Laundry" className="w-full h-full object-cover" />
                         </div>
                     </div>
+                    
                 </div>
             ))}
         </div>
